@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlusBot✨ Commands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul id="categoryList">
+        <li data-category="ai">🤖 AI</li>
+        <li data-category="anime">🌸 Anime</li>
+        <li data-category="economic">💰 Economic</li>
+        <li data-category="fun">🎉 Fun</li>
+        <li data-category="mods">🔧 Mods</li>
+        <li data-category="movies">🎬 Movies</li>
+        <li data-category="owner">👑 Owner</li>
+        <li data-category="security">🛡️ Security</li>
+        <li data-category="utility">⚙️ Utility</li>
+      </ul>
+    </aside>
+    <main class="main">
+      <header>
+        <h1>PlusBot✨ Command Center</h1>
+        <input id="searchBar" placeholder="Search commands..." />
+        <select id="permFilter">
+          <option value="">All Permissions</option>
+          <option>None</option>
+          <option>Kick Members</option>
+          <option>Ban Members</option>
+          <option>Manage Server</option>
+          <option>Administrator</option>
+          <option>Bot Owner</option>
+        </select>
+        <button id="resetButton">Reset Filters</button>
+      </header>
+      <section id="commandDisplay"><p>Loading commands...</p></section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
