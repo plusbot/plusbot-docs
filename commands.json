@@ -4,15 +4,13 @@
       "name": "%ask",
       "desc": "Ask AI a question.",
       "perms": "None",
-      "tags": ["global", "slash"],
-      "note": "💡 Supports markdown formatting."
+      "tags": ["global", "slash"]
     },
     {
       "name": "%generate",
-      "desc": "Generate images/content.",
+      "desc": "Generate images or content",
       "perms": "None",
-      "tags": ["premium"],
-      "note": "⚠️ Premium users only."
+      "tags": ["premium"]
     }
   ],
   "anime": [
@@ -20,8 +18,111 @@
       "name": "%anime",
       "desc": "Search anime info.",
       "perms": "None",
-      "tags": ["global"],
-      "note": ""
+      "tags": ["global"]
+    },
+    {
+      "name": "%waifu",
+      "desc": "Random anime character.",
+      "perms": "None",
+      "tags": []
+    }
+  ],
+  "economic": [
+    {
+      "name": "%balance",
+      "desc": "Check your coins.",
+      "perms": "None",
+      "tags": []
+    },
+    {
+      "name": "%daily",
+      "desc": "Claim daily coins.",
+      "perms": "None",
+      "tags": ["global"]
+    }
+  ],
+  "fun": [
+    {
+      "name": "%joke",
+      "desc": "Get a random joke.",
+      "perms": "None",
+      "tags": []
+    },
+    {
+      "name": "%8ball",
+      "desc": "Ask the magic 8-ball.",
+      "perms": "None",
+      "tags": ["slash"]
+    }
+  ],
+  "mods": [
+    {
+      "name": "%kick",
+      "desc": "Kick a member.",
+      "perms": "Kick Members",
+      "tags": ["slash"]
+    },
+    {
+      "name": "%ban",
+      "desc": "Ban a user.",
+      "perms": "Ban Members",
+      "tags": ["slash"]
+    }
+  ],
+  "movies": [
+    {
+      "name": "%movie",
+      "desc": "Search a movie title.",
+      "perms": "None",
+      "tags": ["global"]
+    },
+    {
+      "name": "%tv",
+      "desc": "Get TV show info.",
+      "perms": "None",
+      "tags": []
+    }
+  ],
+  "owner": [
+    {
+      "name": "%eval",
+      "desc": "Run JS code (owner-only).",
+      "perms": "Bot Owner",
+      "tags": []
+    },
+    {
+      "name": "%reload",
+      "desc": "Reload modules.",
+      "perms": "Bot Owner",
+      "tags": []
+    }
+  ],
+  "security": [
+    {
+      "name": "%scan",
+      "desc": "Scan for bots/threats.",
+      "perms": "Manage Server",
+      "tags": ["slash"]
+    },
+    {
+      "name": "%antiraid",
+      "desc": "Toggle anti-raid mode.",
+      "perms": "Administrator",
+      "tags": []
+    }
+  ],
+  "utility": [
+    {
+      "name": "%ping",
+      "desc": "Check bot latency.",
+      "perms": "None",
+      "tags": ["global"]
+    },
+    {
+      "name": "%uptime",
+      "desc": "Bot uptime info.",
+      "perms": "None",
+      "tags": ["slash"]
     }
   ]
 }
