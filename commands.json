@@ -1,0 +1,27 @@
+{
+  "ai": [
+    {
+      "name": "%ask",
+      "desc": "Ask AI a question.",
+      "perms": "None",
+      "tags": ["global", "slash"],
+      "note": "💡 Supports markdown formatting."
+    },
+    {
+      "name": "%generate",
+      "desc": "Generate images/content.",
+      "perms": "None",
+      "tags": ["premium"],
+      "note": "⚠️ Premium users only."
+    }
+  ],
+  "anime": [
+    {
+      "name": "%anime",
+      "desc": "Search anime info.",
+      "perms": "None",
+      "tags": ["global"],
+      "note": ""
+    }
+  ]
+}
