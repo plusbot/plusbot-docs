@@ -1,0 +1,124 @@
+body {
+  margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0e141b;
+  color: white;
+}
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background: #12181f;
+  padding: 1rem;
+  border-right: 1px solid #2c3a45;
+}
+.sidebar h2 {
+  margin-bottom: 1rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 0.6rem 0.4rem;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+}
+.sidebar li:hover, .sidebar li.active {
+  background: #263544;
+}
+.main {
+  flex-grow: 1;
+  padding: 1rem 2rem;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+header h1 {
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+}
+#searchBar, #permFilter, #resetButton {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+#searchBar {
+  flex-grow: 1;
+  min-width: 200px;
+}
+#resetButton {
+  background: #00bcd4;
+  color: #000;
+  cursor: pointer;
+  border: none;
+}
+.command-block {
+  margin-bottom: 2rem;
+}
+.command-block h2 {
+  text-transform: capitalize;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+.command {
+  background: #1e2a35;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+.command-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.command-desc {
+  margin-top: 0.3rem;
+  color: #ccc;
+}
+.perm-badge {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  background: #0097a7;
+  color: #000;
+}
+.command-note {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #f1c40f;
+}
+.tag-badge {
+  display: inline-block;
+  margin: 0.3rem 0.3rem 0 0;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  color: white;
+  background: #555;
+}
+.tag-badge.premium { background: #9c27b0; }
+.tag-badge.nsfw { background: #d32f2f; }
+.tag-badge.global { background: #1976d2; }
+.tag-badge.slash { background: #388e3c; }
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #2c3a45;
+  }
+}
